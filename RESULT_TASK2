@@ -6,16 +6,33 @@ public class result
         int sum=0;
         int avg=0;
         int marks=0;
+        int avgp=0;
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the numbers of subject");
     int n = sc.nextInt();
     int i;
     for(i=1;i<=n;i++)
     {
-        System.out.println("Enter the marks of "+i+"subject");
+      System.out.println("Enter the marks of "+i+"subject");
     marks = sc.nextInt();
     sum=sum+marks;}
+    System.out.println("TOTAL MARKS IS"+sum);
     avg = sum/n;
-    System.out.println("average is"+avg);
+    avgp= (sum/n*100)/100;
+    System.out.println("average percentage is"+avgp+"%");
+    if(avgp>=90)
+    System.out.println("Grade O");
+    else if(avgp>=80)
+    System.out.println("Grade E");
+    else if(avgp>=70)
+    System.out.println("Grade A");
+    else if(avgp>=60)
+    System.out.println("Grade B");
+    else if(avgp>=50)
+    System.out.println("Grade C");
+    else if(avgp>=40)
+    System.out.println("Grade D");
+    else if(avgp>=33)
+    System.out.println("Grade FAIL");
     
 }}
