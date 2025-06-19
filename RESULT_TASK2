@@ -1,1 +1,21 @@
-
+import java.util.*;
+public class result
+{
+    public static void main(String[]args)
+    {
+        int sum=0;
+        int avg=0;
+        int marks=0;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the numbers of subject");
+    int n = sc.nextInt();
+    int i;
+    for(i=1;i<=n;i++)
+    {
+        System.out.println("Enter the marks of "+i+"subject");
+    marks = sc.nextInt();
+    sum=sum+marks;}
+    avg = sum/n;
+    System.out.println("average is"+avg);
+    
+}}
