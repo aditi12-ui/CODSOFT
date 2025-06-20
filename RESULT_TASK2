@@ -32,7 +32,7 @@ public class result
     System.out.println("Grade C");
     else if(avgp>=40)
     System.out.println("Grade D");
-    else if(avgp>=33)
+    else if(avgp<33)
     System.out.println("Grade FAIL");
     
 }}
